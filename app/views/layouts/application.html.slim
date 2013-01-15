@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    title= @app_name.titleize rescue 'app'
+    = stylesheet_link_tag 'application', media: 'all'
+    = csrf_meta_tags
+  body ng-app
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.brand href='/'
+            = @app_name.titleize rescue 'app'
+    .container
+      = render 'layouts/flash'
+      .content
+        = yield
+    = javascript_include_tag 'application'
