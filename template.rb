@@ -71,8 +71,9 @@ gem_group :test do
 end
 
 gem_group :assets do
+  gem 'libv8', '3.11.8.3'
+  gem 'therubyracer', '0.11.0beta5'
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-  gem 'therubyracer'
   gem 'less-rails'
 end
 
