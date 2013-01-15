@@ -134,7 +134,7 @@ html
     title= @app_name.titleize rescue 'app'
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
-  body ng-app
+  body{ng-app}
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
@@ -145,9 +145,6 @@ html
       .content
         = yield
     = javascript_include_tag 'application'
-CODE
-
-file 'app/views/layouts/_flash.html.slim', <<-CODE
 CODE
 
 
