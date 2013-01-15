@@ -36,3 +36,24 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "active_model_serializers"
+gem "slim-rails"
+gem "figaro"
+group :test, :development do
+  gem "factory_girl_rails"
+  gem "rspec-rails"
+  gem "quiet_assets"
+end
+
+group :test do
+  gem "webmock"
+  gem "vcr"
+end
+
+group :assets do
+  gem "libv8", "3.11.8.3"
+  gem "therubyracer", "0.11.0beta5"
+  gem "twitter-bootstrap-rails", :git => "git://github.com/seyhunak/twitter-bootstrap-rails.git"
+  gem "less-rails"
+end
