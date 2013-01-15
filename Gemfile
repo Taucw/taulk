@@ -59,3 +59,4 @@ group :assets do
 end
 
 gem "angular-rails"
+gem "couchrest_model"
