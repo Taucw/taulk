@@ -13,11 +13,16 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem "libv8", "3.11.8.3"
+  gem "therubyracer", "0.11.0beta5"
+  gem "twitter-bootstrap-rails", :git => "git://github.com/seyhunak/twitter-bootstrap-rails.git"
+  gem "less-rails"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-ui-rails'
 end
 
 gem 'jquery-rails'
@@ -49,13 +54,6 @@ end
 group :test do
   gem "webmock"
   gem "vcr"
-end
-
-group :assets do
-  gem "libv8", "3.11.8.3"
-  gem "therubyracer", "0.11.0beta5"
-  gem "twitter-bootstrap-rails", :git => "git://github.com/seyhunak/twitter-bootstrap-rails.git"
-  gem "less-rails"
 end
 
 gem "angular-rails"
