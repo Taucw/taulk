@@ -12,7 +12,7 @@ puts "starting generation for #{app_name}"
 run "rm -R test"
 run "rm public/index.html"
 
-file '.rvmrc', "rvm 1.9.3@#{app_name} --create"
+file '.rvmrc', "rvm 1.9.3p286@#{app_name} --create"
 # Picked from https://github.com/RailsApps/rails_apps_composer/blob/master/recipes/extras.rb
 if ENV['MY_RUBY_HOME'] && ENV['MY_RUBY_HOME'].include?('rvm')
   begin
