@@ -72,7 +72,7 @@ gem_group :test do
 end
 
 gem_group :assets do
-  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+  gem 'twitter-bootstrap-rails'#, :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
   gem 'therubyracer'
   gem 'less-rails'
 end
