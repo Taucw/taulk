@@ -1,3 +1,13 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#main {
+  height: 100%;
+}
+#slidable {
+	/* only IE6 has container width & height set by Layout */
+	_width:		auto !important;
+	_height:	auto !important;
+  height: 100px;
+}

@@ -1,0 +1,13 @@
+| Chat items:
+ul{ng-repeat="item in chatitems"}
+  li
+    strong
+      | From : {{item.from}}
+    | {{item.content}}
+= content_for :flow do
+  p
+    | {{flow}}
+
+= content_for :bottom do
+  p
+    | Bottom item

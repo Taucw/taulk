@@ -12,8 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.ui.draggable
+//= require jquery-layout
 //= require twitter/bootstrap
+//= require angular
 //= require_tree .
-//= require angular.min
-//= require angle-up
+
 //= require_tree ./angular
