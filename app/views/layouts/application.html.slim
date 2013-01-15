@@ -5,14 +5,18 @@ html
     title= @app_name.titleize rescue 'app'
     = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
-  body ng-app
-    .navbar.navbar-fixed-top
+  body ng-app="Taulk"
+    .navbar
       .navbar-inner
         .container
           a.brand href='/'
             = @app_name.titleize rescue 'app'
-    .container
-      = render 'layouts/flash'
-      .content
-        = yield
+    .container-fluid{ng-controller='MainCtrl'}
+      .row-fluid
+        = render 'layouts/flash'
+      #slidable.row-fluid
+        .span6.flow
+          = yield :flow
+        .span6
+          = yield
     = javascript_include_tag 'application'
