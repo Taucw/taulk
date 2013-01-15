@@ -58,6 +58,7 @@ git commit: %Q{ -m 'Initial commit, plain rails app' }
 gem "active_model_serializers"
 gem "slim-rails"
 gem "figaro"
+gem "libv8", '~>3.11.8.3'
 
 gem_group :test, :development do
   gem 'factory_girl_rails'
