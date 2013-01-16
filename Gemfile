@@ -1,6 +1,10 @@
-source 'https://rubygems.org'
-
-gem 'rails', '3.2.9'
+source 'http://rubygems.org'
+ruby '1.9.3'
+if RUBY_VERSION =~ /1.9/
+    Encoding.default_external = Encoding::UTF_8
+    Encoding.default_internal = Encoding::UTF_8
+end
+gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -51,6 +55,7 @@ group :test, :development do
   gem "factory_girl_rails"
   gem "rspec-rails"
   gem "quiet_assets"
+  gem 'jasminerice'
 end
 
 group :test do
