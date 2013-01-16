@@ -48,20 +48,23 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
-gem "active_model_serializers"
-gem "slim-rails"
-gem "figaro"
+gem 'active_model_serializers'
+gem 'slim-rails'
+gem 'figaro'
 group :test, :development do
-  gem "factory_girl_rails"
-  gem "rspec-rails"
-  gem "quiet_assets"
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'quiet_assets'
   gem 'jasminerice'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-jasmine'
 end
 
 group :test do
-  gem "webmock"
-  gem "vcr"
+  gem 'webmock'
+  gem 'vcr'
 end
 
-gem "angular-rails"
-gem "couchrest_model"
+gem 'angular-rails'
+gem 'couchrest_model'
