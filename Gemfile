@@ -59,6 +59,14 @@ group :test, :development do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-jasmine'
+  gem 'zeus'
+end
+
+group :development do
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+  gem 'ruby_gntp'
 end
 
 group :test do
